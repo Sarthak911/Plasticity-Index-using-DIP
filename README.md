@@ -25,14 +25,11 @@ soil_pi_estimation/
 │   ├── raw/                     # Raw input soil images
 │   ├── processed/               # Preprocessed images
 │   └── labels.csv               # Actual PI values for samples
-│
-├── results/                     # Model metrics, plots, and predictions
-├── models/                      # Saved model artifacts (.joblib)
-├── logs/                        # Log files
+
 └── requirements.txt             # Dependencies list
 ```
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 1. **Create a virtual environment**
    ```bash
@@ -55,10 +52,10 @@ soil_pi_estimation/
    python scripts/predict.py --input data/raw --output predictions.csv
    ```
 
-## 🧠 Notes
+## Notes
 - The SVR model uses an RBF kernel with configurable parameters in `config.py`.
 - Dataset augmentation helps improve generalization with small datasets.
 - Evaluation metrics and plots are saved in the `results/` folder.
 
-## 📊 Synthetic Data
+## Synthetic Data
 A sample augmented dataset `pi_data_augmented.csv` is provided, containing 5 synthetic variations per sample.
